@@ -1,0 +1,30 @@
+
+<h3>
+
+
+Forcast For <span class="text-danger h1">{{city | uppercase }}</span>:
+<br>
+<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 200px; overflow:-moz-hidden-unscrollable; flex-wrap:wrap;">
+<div ng-repeat='kismyass in weatherResult.list' style="display:inline">
+
+
+      <div class="toast show" data-autohide="false" style="display:inline; margin: 2px;" >
+        <div class="toast-header" style="display: flex;" >
+            Date: {{shitman(kismyass.dt) | date: 'dd/MM/yyyy  hh:mm' }}
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close" style="    margin-left: 5.5rem !important;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div>
+        <div class="toast-body">
+        טמפרטורה : {{kismyass.main.temp}} מעלות צלזיוס
+        
+        <!--{{$index}} -->
+        </div>
+    </div>
+
+  </div>
+</div>
+
+sukablyat! <a href="#/forecast/5" style="margin-right: 10px;">1</a><a href="#/forecast/10" style="margin-right: 10px;">2</a><a href="#/forecast/15" style="margin-right: 10px;">3</a><a href="#/forecast/20" style="margin-right: 10px;">4</a><a href="#/forecast/25" style="margin-right: 10px;">5</a>
+</h3>
